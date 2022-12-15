@@ -8,10 +8,6 @@ body *::after {
   box-sizing: border-box;
 }
 
-[class] {
-  margin: 0;
-}
-
 a {
   color: inherit;
   text-decoration: none;
@@ -28,7 +24,7 @@ body {
 
 /* 유연한 미디어 */
 img {
-  max-width: 100%;
+  max-width: 100%; /*최대한 커질 수 있는 크기 -> 내 원본*/
   height: auto;
 }
 

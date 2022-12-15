@@ -3,3 +3,22 @@
 @import url(./a11y.css);
 @import url(./theme.css);
 @import url(./base.css);
+
+body { /*미디어 쿼리 없는 css는 공통 css*/
+  background-color: var(--yellow);
+}
+
+@media (min-width: 320px) {
+  body {
+    background-color: var(--green);
+  } 
+}
+
+@media (min-width: 769px) { /*768까지 모바일, 769부터 데스크탑*/
+  body {
+    background-color: var(--blue);
+  } 
+}
+
+
+
