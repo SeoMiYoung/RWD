@@ -1,0 +1,84 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+
+/* 그룹들 */
+.group1 {
+  background: gold;
+}
+.group2 {
+  background: pink;
+}
+.group3 {
+  background: lightgreen;
+}
+.group4 {
+  background: skyblue;
+}
+.group5 {
+  background: salmon;
+}
+.group6 {
+  background: violet;
+}
+.group7 {
+  background: aquamarine;
+}
+.group8 {
+  background: lightseagreen;
+}
+.group9 {
+  background: MediumPurple;
+}
+.group10 {
+  background: MidnightBlue;
+}
+.group11 {
+  background: Olive;
+}
+.group12 {
+  background: SandyBrown;
+}
+
+
+/* 그룹을 감싼 컨테이너 */
+.container {
+  background: silver;
+  border: 1px solid red;
+  display: grid;
+  grid-template-rows: auto; /*추가되는 순간 자동으로 행이 만들어짐*/
+  padding: 24px;
+}
+
+[class*="group"] {
+  height: 150px;
+}
+
+/* small device */
+@media (max-width: 767px) {
+  .container {
+    /* 모바일일때는 열이 1개 있기를 원함 */
+    grid-template-columns: 1fr; /*1분의 1*/
+  }
+}
+
+/* medium device */
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr; /*2분의 1*/
+  }
+}
+
+/* medium device */
+@media (min-width: 1280px) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr 1fr; /*4분의 1*/
+  }
+}
+
